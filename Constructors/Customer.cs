@@ -19,22 +19,37 @@ namespace Constructors
         instantiate an object can be flexible. We have three ctors here so can create a Customer
         that has an id, or one that has both id and name, or one that has neither
             */
-        public Customer(int id)
-        {
-            this.Id = id;
-
-        }
-        public Customer(int id, string name)
-        {
-            this.Id = id;
-            this.Name = name;
-        }
 
         //default ctor with no parameters
         public Customer()
         {
+            // DRY
+            Orders = new List<Order>();
+        }
+
+        /*'this' keyword means that first, the ctor here is going to call the ctor above that has
+         * no parameters, which will initialise the Orders field. Then it will run what's inside itself
+         */
+        public Customer(int id)
+            :this()
+        {
+            // DRY
+            this.Id = id;
 
         }
-    } // end of Customer class
+
+        /* Here the ctor also has a 'this' keyword. So it too will first call the ctor without
+         * parameters which will ensure that any time you instantiate a Customer, it will
+         * always have initialised inside it an empty List of Orders. Then it will call the
+         * ctor that takes an id paramter, so any Customer will also have an id.
+         Now we don't need a this.Id - id field inside the ctor */
+        public Customer(int id, string name)
+            :this(id)
+        {
+            this.Name = name;
+        }
+
+    } /* end of Customer class. Its the responsibility of the Customer class to ensure its Orders get initialised
+       to an empty List. Otherwise Orders won't get initialised and it'll be null! */
 
 }
