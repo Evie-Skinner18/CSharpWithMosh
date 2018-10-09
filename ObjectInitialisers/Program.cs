@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ObjectInitialisers
+namespace Fields
 {
+    // a field is like a var that we declare at the class level
     class Program
     {
         static void Main(string[] args)
