@@ -4,18 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Operators
+namespace Constructors
 {
     class Program
     {
         static void Main(string[] args)
         {
-            var one = 1;
-            var two = 2;
-            var three = 3;
-            
+            var customer = new Customer();
+            //Console.WriteLine("Hello World!");
 
-            Console.WriteLine(!(one != two) );
+
             Console.ReadKey();
         }
     }
