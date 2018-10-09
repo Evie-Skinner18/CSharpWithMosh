@@ -10,7 +10,11 @@ namespace Methods
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var mapPoint = new Point(0, 10);
+            mapPoint.Move(new Point(40, 60));
+            Console.WriteLine("mapPoint is now at ({0}, {1})", mapPoint.X, mapPoint.Y);
+
+        
             Console.ReadKey();
         }
     }
