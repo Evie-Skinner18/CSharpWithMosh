@@ -10,7 +10,12 @@ namespace Operators
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var one = 1;
+            var two = 2;
+            var three = 3;
+            
+
+            Console.WriteLine(!(one != two) );
             Console.ReadKey();
         }
     }
