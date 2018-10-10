@@ -6,9 +6,15 @@ using System.Threading.Tasks;
 
 namespace Methods
 {
-    class Program
+    partial class Program
     {
         static void Main(string[] args)
+        {
+            UsePoints();
+            
+        }
+
+        static void UsePoints()
         {
             try
             {
@@ -26,11 +32,9 @@ namespace Methods
             }
             catch (Exception)
             {
-
                 Console.WriteLine("An unexpected error has occured soz! Oh well...");
                 Console.ReadKey();
             }
-            
         }
     }
 }
