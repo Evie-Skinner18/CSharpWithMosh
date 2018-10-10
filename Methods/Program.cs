@@ -10,8 +10,29 @@ namespace Methods
     {
         static void Main(string[] args)
         {
-            UsePoints();
-            
+            // choose a method and invoke here
+
+
+            // out modifier. You'll probs never use this but you might see it in .Net so good to know.
+            // if conversion is successful, var result will be true (this code returns a bool)
+            int number;
+            var result = int.TryParse("abc", out number);
+            if(result)
+                Console.WriteLine(number);
+            else
+                Console.WriteLine("conversion failed soz");
+            Console.ReadKey();
+        }
+
+        static void UseParamsInCalculator()
+        {
+            var calculator = new Calculator();
+
+            // don't have to use array notiation because we've used params in the method
+            Console.WriteLine(calculator.Add(1, 2));
+            Console.WriteLine(calculator.Add(122, 90));
+            Console.WriteLine(calculator.Add(34573627, 13));
+            Console.ReadKey();
         }
 
         static void UsePoints()
