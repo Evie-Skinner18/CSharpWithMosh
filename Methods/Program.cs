@@ -27,8 +27,8 @@ namespace Methods
             catch (Exception)
             {
 
-                throw;
-                //Console.ReadKey();
+                Console.WriteLine("An unexpected error has occured soz! Oh well...");
+                Console.ReadKey();
             }
             
         }
