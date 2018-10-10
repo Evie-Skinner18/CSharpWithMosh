@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 
 namespace AccessModifiers
 {
-    class Program
+    partial class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            /* ENCAPSULATION.
+             * Thing about hiding some info and the chef and the waitress
+             * */
+           // Console.WriteLine();
             Console.ReadKey();
         }
     }
