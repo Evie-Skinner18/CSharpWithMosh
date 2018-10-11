@@ -15,8 +15,15 @@ namespace Generics
             var theJungleBook = new Book {Isbn = 12345, Title = "The Jungle Book"};
             var bookCollection = new List<Book>();
             bookCollection.Add(theJungleBook);
-        
-            Console.ReadKey();
+            Console.WriteLine(bookCollection.Count);
+            
+            // calling the Nullable that takes a type. In this case we choose the type to be int
+            // and the value to be 5.
+            var number = new Nullable<int>(5);
+            Console.WriteLine("Has value? " + number.HasValue);
+            Console.WriteLine("The value is " + number.GetValueOrDefault());
+            Console.ReadKey(); 
+            
         }
     }
 }

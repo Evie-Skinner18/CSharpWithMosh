@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Book.cs" />
     <Compile Include="DiscountCalculator.cs" />
+    <Compile Include="Nullable.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
