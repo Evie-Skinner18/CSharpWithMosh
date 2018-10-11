@@ -3,6 +3,15 @@
 namespace Generics
 {
     // we've created a generic class
+
+    /* five types of constraints. T should be this or that.So you can have T as whatever you want but
+         within certain categories
+            where T : IComparable
+            where T : Product
+            where T : class
+            where T : struct
+            where T : new()     <--- an object that has a default ctor
+     */
     public class Utilities<T> where T : IComparable
     {
         public int WhichIsGreater(int a, int b)
