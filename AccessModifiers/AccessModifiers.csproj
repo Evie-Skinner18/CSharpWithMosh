@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{34CFAB2E-5A50-4F75-ABB7-DD5441FDBCDA}</ProjectGuid>
+    <ProjectGuid>{2573CE77-3E55-4385-84D6-35AC318D74AE}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Constructors</RootNamespace>
-    <AssemblyName>Constructors</AssemblyName>
+    <RootNamespace>AccessModifiers</RootNamespace>
+    <AssemblyName>AccessModifiers</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,8 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Customer.cs" />
-    <Compile Include="Order.cs" />
+    <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

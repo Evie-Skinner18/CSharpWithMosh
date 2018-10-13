@@ -10,9 +10,13 @@ namespace Constructors
     {
         static void Main(string[] args)
         {
-            var customer = new Customer();
-            //Console.WriteLine("Hello World!");
+            var customer = new Customer(1, "John");
+            Console.WriteLine(customer.Id);
+            Console.WriteLine(customer.Name);
+            var order = new Order();
 
+            // List.Add(item) you are adding an order to the list of orders. Add is like .push
+            customer.Orders.Add(order);
 
             Console.ReadKey();
         }

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{34CFAB2E-5A50-4F75-ABB7-DD5441FDBCDA}</ProjectGuid>
+    <ProjectGuid>{A584ACDD-45C0-4027-8BA5-B90D0E5B1C51}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Constructors</RootNamespace>
-    <AssemblyName>Constructors</AssemblyName>
+    <RootNamespace>Generics</RootNamespace>
+    <AssemblyName>Generics</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,10 +42,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Customer.cs" />
-    <Compile Include="Order.cs" />
+    <Compile Include="Book.cs" />
+    <Compile Include="DiscountCalculator.cs" />
+    <Compile Include="Nullable.cs" />
+    <Compile Include="Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
