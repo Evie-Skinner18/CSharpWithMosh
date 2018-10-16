@@ -19,11 +19,14 @@ namespace EventsAndDelegates
             // instantiate the encoder object. this is the EVENT PUBLISHER
             var videoEncoder = new VideoEncoder();
 
-            // instantiate a new mail service. This is the EVENT SUBSCRIBER 
+            // instantiate a new mail service an a new messag service.
+            // This is the EVENT SUBSCRIBER 
             var mailService = new MailService();
+            var messageService = new MessageService();
 
             // before we encode a video, we have to start the subscription
             videoEncoder.VideoEncoded += mailService.OnVideoEncoded;
+            videoEncoder.VideoEncoded += messageService.OnVideoEncoded;
 
             // call Encode method on your new encoder, passing in the Ariel video as parameter
             videoEncoder.Encode(ariel);
@@ -42,4 +45,7 @@ namespace EventsAndDelegates
              */
         }
     }
+
+   
+
 }

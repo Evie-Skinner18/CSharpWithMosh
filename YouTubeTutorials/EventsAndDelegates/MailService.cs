@@ -8,8 +8,8 @@ namespace EventsAndDelegates
         // this is the event handler
         public void OnVideoEncoded(object source, EventArgs e)
         {
-            Console.WriteLine("We arein MailService. Sending an email...");
+            Console.WriteLine("We are in MailService. Sending an email...");
+            Console.ReadKey();
         }
     }
-
 }
