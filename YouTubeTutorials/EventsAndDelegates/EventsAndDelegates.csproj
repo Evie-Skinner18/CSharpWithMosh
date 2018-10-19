@@ -48,6 +48,7 @@
     <Compile Include="Video.cs" />
     <Compile Include="VideoEncoder.cs" />
     <Compile Include="MailService.cs" />
+    <Compile Include="VideoEventArgs.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

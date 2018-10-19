@@ -11,7 +11,7 @@ namespace EventsAndDelegates
         // step 1: define a delegate. A delegate determines the signature
         // first param is the class that's publishing the event; second is any additional data we want to send
         // with the event
-        public delegate void VideoEncodedEventHandler(object source, EventArgs args);
+        public delegate void VideoEncodedEventHandler(object source, VideoEventArgs args);
 
         // step 2: define an event based on that delegate
         public event VideoEncodedEventHandler VideoEncoded;
@@ -22,18 +22,18 @@ namespace EventsAndDelegates
             Thread.Sleep(3000);
             Console.WriteLine("Encoding finished!");
 
-            OnVideoEncoded();
+            OnVideoEncoded(video);
         }
 
         // 3: publish the event. Use a method and we call it when the encoder has finished encoding. This will notify
         // all the subscribers
-        protected virtual void OnVideoEncoded()
+        protected virtual void OnVideoEncoded(Video video)
         {
             // check if there are any subscribers
             if (VideoEncoded !=null)
             {
                 // what is publishing the event? The current object: 'this'. Don't want to send additional data this time
-                VideoEncoded(this, EventArgs.Empty);
+                VideoEncoded(this, new VideoEventArgs(){Video = video});
             }
         }
     }

@@ -6,10 +6,10 @@ namespace EventsAndDelegates
     public class MailService
     {
         // this is the event handler
-        public void OnVideoEncoded(object source, EventArgs e)
+        public void OnVideoEncoded(object source, VideoEventArgs e)
         {
-            Console.WriteLine("We are in MailService. Sending an email...");
-            //Console.ReadKey();
+            Console.WriteLine("MailService has been notified of the event. " +
+                              "Sending an email..." + e.Video.Title);
         }
     }
 }
