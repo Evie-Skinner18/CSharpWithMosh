@@ -21,6 +21,8 @@ namespace EventsAndDelegates
             Console.WriteLine("Encoding video...");
             Thread.Sleep(3000);
             Console.WriteLine("Encoding finished!");
+
+            OnVideoEncoded();
         }
 
         // 3: publish the event. Use a method and we call it when the encoder has finished encoding. This will notify

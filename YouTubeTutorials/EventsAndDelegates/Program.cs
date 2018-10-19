@@ -24,7 +24,9 @@ namespace EventsAndDelegates
             var mailService = new MailService();
             var messageService = new MessageService();
 
-            // before we encode a video, we have to start the subscription
+            // before we encode a video, we have to start the subscription. We didn't have to
+            // change anything about the VideoEncoder! Wejust added a new class up there MessageService
+            // whi hhas inside it an OnVideoEncoded method
             videoEncoder.VideoEncoded += mailService.OnVideoEncoded;
             videoEncoder.VideoEncoded += messageService.OnVideoEncoded;
 

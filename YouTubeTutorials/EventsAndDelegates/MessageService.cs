@@ -6,7 +6,7 @@ namespace EventsAndDelegates
     {
         public void OnVideoEncoded(object source, EventArgs args)
         {
-            Console.WriteLine("Sending a text...");
+            Console.WriteLine("We are in MessageService. Sending a text...");
         }
     }
 }

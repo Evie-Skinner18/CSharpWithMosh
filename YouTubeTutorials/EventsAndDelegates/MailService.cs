@@ -9,7 +9,7 @@ namespace EventsAndDelegates
         public void OnVideoEncoded(object source, EventArgs e)
         {
             Console.WriteLine("We are in MailService. Sending an email...");
-            Console.ReadKey();
+            //Console.ReadKey();
         }
     }
 }
