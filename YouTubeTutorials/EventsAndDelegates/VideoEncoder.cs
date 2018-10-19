@@ -11,10 +11,12 @@ namespace EventsAndDelegates
         // step 1: define a delegate. A delegate determines the signature
         // first param is the class that's publishing the event; second is any additional data we want to send
         // with the event
-        public delegate void VideoEncodedEventHandler(object source, VideoEventArgs args);
+        //public delegate void VideoEncodedEventHandler(object source, VideoEventArgs args);
 
         // step 2: define an event based on that delegate
-        public event VideoEncodedEventHandler VideoEncoded;
+        // we don't have to make a custom one as .Net aleady has one! This is exactly
+        // equivalent to the delegate above. So we dont have to create a delegate explicitly
+        public event EventHandler<VideoEventArgs> VideoEncoded;
 
         public void Encode(Video video)
         {
