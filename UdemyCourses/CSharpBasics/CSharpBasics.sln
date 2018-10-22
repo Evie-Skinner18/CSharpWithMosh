@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpBasics.UnitTests", "C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharpBasics.UnitTests", "CSharpBasics.UnitTests", "{9588693B-2C30-4557-AC47-1A9A5C4E5867}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arrays", "Arrays\Arrays.csproj", "{92C006E6-D528-4A05-B27B-DD963297829A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,6 +36,10 @@ Global
 		{F5889CFB-086F-4392-AEFF-C447BD8ACFAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5889CFB-086F-4392-AEFF-C447BD8ACFAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5889CFB-086F-4392-AEFF-C447BD8ACFAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92C006E6-D528-4A05-B27B-DD963297829A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92C006E6-D528-4A05-B27B-DD963297829A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92C006E6-D528-4A05-B27B-DD963297829A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92C006E6-D528-4A05-B27B-DD963297829A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
