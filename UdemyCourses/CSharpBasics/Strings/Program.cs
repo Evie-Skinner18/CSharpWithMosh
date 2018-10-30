@@ -13,8 +13,18 @@ namespace Strings
 
             string [] names = {"Evie", "Nelly", "Jimbo", "Mobwicks"};
             var formattedNames = string.Join(" and ", names);
+
+            // @ means it's a 
+            var text = @"Hi John,
+                Look into the following paths: 
+                \Users\eves\bitch
+                \bitch\bitch\bitch
+                
+                Ta, love you  :->";
+                
             Console.WriteLine(fullName);
             Console.WriteLine(formattedNames);
+            Console.WriteLine(text);
         }
     }
 }
