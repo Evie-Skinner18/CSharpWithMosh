@@ -40,8 +40,6 @@ namespace ReferenceTypesAndValueTypes
             MakeOld(youngPerson);
             // youngPerson's age is now 39
             Console.WriteLine(youngPerson.Age);
-
-          
         }
 
         // this int is coincidentally also named namber but it exists in a different location in memory. This
