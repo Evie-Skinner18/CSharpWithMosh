@@ -13,6 +13,7 @@ namespace MaxValue
 
             var maxValue = (firstUserNum > secondUserNum) ? firstUserNum : secondUserNum;
             Console.WriteLine("The maximum of your two numbers is {0}", maxValue);
+            Console.ReadKey();
         }
     }
 }
