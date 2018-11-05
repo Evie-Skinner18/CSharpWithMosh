@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace Arrays
 {
@@ -22,6 +23,11 @@ namespace Arrays
             Console.WriteLine(words[0]);
             Console.WriteLine(words[1]);
             Console.WriteLine(words[2]);
+           // var todaysDateForDateFields = new DateTime();
+
+            
+            
+            
             Console.ReadKey();
         }
     }
