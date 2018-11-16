@@ -8,11 +8,12 @@ namespace RandomClass
         static void Main(string[] args)
         {
             var random = new Random();
-            var buffer = new char[10];
+
+            const int passwordLength = 10;
+            var buffer = new char[passwordLength];
 
 
-
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < passwordLength; i++)
             {
                 // the console will show ten random ASCII chars whose numbers are between 0 and 26 after
                 // the char 'a'. this equates to alphabet! Make the range of numbers wider for alphanumeric
