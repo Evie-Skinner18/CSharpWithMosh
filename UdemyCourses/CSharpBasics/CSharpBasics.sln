@@ -44,9 +44,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhileLoops", "WhileLoops\Wh
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RandomClass", "RandomClass\RandomClass.csproj", "{4CA7C605-6D38-4B1F-AF2E-858EF9D31B2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumsDivisibleByThree", "NumsDivisibleByThree\NumsDivisibleByThree.csproj", "{BCE67379-F98B-4444-AC1E-DA4A5520533B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NumsDivisibleByThree", "NumsDivisibleByThree\NumsDivisibleByThree.csproj", "{BCE67379-F98B-4444-AC1E-DA4A5520533B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcEnteredNums", "CalcEnteredNums\CalcEnteredNums.csproj", "{DF7EEE47-BEB2-4169-8CF5-715E267ABCEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalcEnteredNums", "CalcEnteredNums\CalcEnteredNums.csproj", "{DF7EEE47-BEB2-4169-8CF5-715E267ABCEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factorials", "Factorials\Factorials.csproj", "{0424EAA6-A44E-4DAA-A85E-3B96016AEE12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuessingGame", "GuessingGame\GuessingGame.csproj", "{88B1506B-D4AF-4C92-94A0-3C00A16F2C7B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -130,6 +134,14 @@ Global
 		{DF7EEE47-BEB2-4169-8CF5-715E267ABCEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF7EEE47-BEB2-4169-8CF5-715E267ABCEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF7EEE47-BEB2-4169-8CF5-715E267ABCEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0424EAA6-A44E-4DAA-A85E-3B96016AEE12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0424EAA6-A44E-4DAA-A85E-3B96016AEE12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0424EAA6-A44E-4DAA-A85E-3B96016AEE12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0424EAA6-A44E-4DAA-A85E-3B96016AEE12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88B1506B-D4AF-4C92-94A0-3C00A16F2C7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88B1506B-D4AF-4C92-94A0-3C00A16F2C7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88B1506B-D4AF-4C92-94A0-3C00A16F2C7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88B1506B-D4AF-4C92-94A0-3C00A16F2C7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -144,6 +156,8 @@ Global
 		{41FCCB0A-91D8-4B92-A41B-271FEC47AE10} = {7C82A18C-A7BF-4F8F-BBD3-88B07270EBA2}
 		{BCE67379-F98B-4444-AC1E-DA4A5520533B} = {41FCCB0A-91D8-4B92-A41B-271FEC47AE10}
 		{DF7EEE47-BEB2-4169-8CF5-715E267ABCEA} = {41FCCB0A-91D8-4B92-A41B-271FEC47AE10}
+		{0424EAA6-A44E-4DAA-A85E-3B96016AEE12} = {41FCCB0A-91D8-4B92-A41B-271FEC47AE10}
+		{88B1506B-D4AF-4C92-94A0-3C00A16F2C7B} = {41FCCB0A-91D8-4B92-A41B-271FEC47AE10}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {652B29C2-9A97-458D-8648-00EDE4CF3C74}
