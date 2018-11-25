@@ -19,20 +19,17 @@ namespace GuessingGame
                 var randomNum = random.Next(1, 10);
                 Console.Write("Let's play bitch! Guess a number between 1 and 10.");
                 Console.Write(randomNum);
-                userInput = Console.ReadLine();
+
                 while (userInput != "exit")
                 {
-                    numberOfGuesses++;
-                    if (numberOfGuesses >= 4)
-                    {
-                        Console.WriteLine("Ooh no more guesses soz!");
-                        break;
-                    }
-                    else
+                    if (numberOfGuesses < 4)
                     {
                         Console.Write("You have " + (4 - numberOfGuesses).ToString()
                                           + " guesses left. Choose wisely...");
+                        userInput = Console.ReadLine();
                         userGuess = Int32.Parse(userInput);
+                        numberOfGuesses++;
+
                         if (userGuess == randomNum)
                         {
                             Console.Write("You've won the game on guess number "
@@ -42,6 +39,11 @@ namespace GuessingGame
                         {
                             Console.WriteLine("Not quite my number. Have another go!");
                         }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Ooh no more guesses soz!");
+                        break;
                     }
                     
                 }
