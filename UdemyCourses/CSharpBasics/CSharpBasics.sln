@@ -2,55 +2,57 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Variables", "CSharpBasics\Variables.csproj", "{934951F7-AB54-488C-BF2A-F60D097A278E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Variables", "CSharpBasics\Variables.csproj", "{934951F7-AB54-488C-BF2A-F60D097A278E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Operators", "Operators\Operators.csproj", "{9C9320AE-5CCB-44E1-B4AA-14C76C966E8D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Operators", "Operators\Operators.csproj", "{9C9320AE-5CCB-44E1-B4AA-14C76C966E8D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Classes", "Classes\Classes.csproj", "{1441BEC9-D3FA-4992-9A06-583AABA5D8F9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classes", "Classes\Classes.csproj", "{1441BEC9-D3FA-4992-9A06-583AABA5D8F9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpBasics.UnitTests", "CSharpBasicsUnitTests\CSharpBasics.UnitTests.csproj", "{F5889CFB-086F-4392-AEFF-C447BD8ACFAD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpBasics.UnitTests", "CSharpBasicsUnitTests\CSharpBasics.UnitTests.csproj", "{F5889CFB-086F-4392-AEFF-C447BD8ACFAD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharpBasics.UnitTests", "CSharpBasics.UnitTests", "{9588693B-2C30-4557-AC47-1A9A5C4E5867}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arrays", "Arrays\Arrays.csproj", "{92C006E6-D528-4A05-B27B-DD963297829A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arrays", "Arrays\Arrays.csproj", "{92C006E6-D528-4A05-B27B-DD963297829A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Strings", "Strings\Strings.csproj", "{9FA1CBCE-39C7-403D-AB1D-26BC999522DD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strings", "Strings\Strings.csproj", "{9FA1CBCE-39C7-403D-AB1D-26BC999522DD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Enums", "Enums\Enums.csproj", "{18C366A4-9887-44DE-A06F-8085F1B60DD3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enums", "Enums\Enums.csproj", "{18C366A4-9887-44DE-A06F-8085F1B60DD3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReferenceTypesAndValueTypes", "ReferenceTypesAndValueTypes\ReferenceTypesAndValueTypes.csproj", "{72010C08-ACCD-4BEE-95F3-5AED870AA2F4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReferenceTypesAndValueTypes", "ReferenceTypesAndValueTypes\ReferenceTypesAndValueTypes.csproj", "{72010C08-ACCD-4BEE-95F3-5AED870AA2F4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConditionalStatements", "ConditionalStatements\ConditionalStatements.csproj", "{9A0409EF-350F-4773-BF63-1CBE74F025B7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConditionalStatements", "ConditionalStatements\ConditionalStatements.csproj", "{9A0409EF-350F-4773-BF63-1CBE74F025B7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercises", "Exercises", "{7C82A18C-A7BF-4F8F-BBD3-88B07270EBA2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnterANumber", "EnterANumber\EnterANumber.csproj", "{82617627-7565-4190-8E94-9D49E8F06148}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnterANumber", "EnterANumber\EnterANumber.csproj", "{82617627-7565-4190-8E94-9D49E8F06148}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaxValue", "EnterANumber\MaxValue\MaxValue.csproj", "{38C25578-8A24-4E6B-85FA-23A09682F89A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxValue", "EnterANumber\MaxValue\MaxValue.csproj", "{38C25578-8A24-4E6B-85FA-23A09682F89A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PortraitOrLandscape", "EnterANumber\PortraitOrLandscape\PortraitOrLandscape.csproj", "{06482688-9ECA-4147-B730-7EA1675987C3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortraitOrLandscape", "EnterANumber\PortraitOrLandscape\PortraitOrLandscape.csproj", "{06482688-9ECA-4147-B730-7EA1675987C3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpeedCamera", "EnterANumber\SpeedCamera\SpeedCamera.csproj", "{7DEFC376-0757-4ABA-9EA4-C4B393499623}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpeedCamera", "EnterANumber\SpeedCamera\SpeedCamera.csproj", "{7DEFC376-0757-4ABA-9EA4-C4B393499623}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Conditionals", "Conditionals", "{4F428CA4-C131-4A3B-B566-B55C4C059DDD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Loops", "Loops", "{41FCCB0A-91D8-4B92-A41B-271FEC47AE10}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForLoops", "ForLoops\ForLoops.csproj", "{14DC9B14-85C9-4FDF-96B8-AED73F2E7DF5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForLoops", "ForLoops\ForLoops.csproj", "{14DC9B14-85C9-4FDF-96B8-AED73F2E7DF5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Foreach", "Foreach\Foreach.csproj", "{E527E343-56F1-44C6-9BDB-F74F2E7D61F1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Foreach", "Foreach\Foreach.csproj", "{E527E343-56F1-44C6-9BDB-F74F2E7D61F1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhileLoops", "WhileLoops\WhileLoops.csproj", "{4DD06DBB-9D19-45A1-AD12-CCB12BE7760A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhileLoops", "WhileLoops\WhileLoops.csproj", "{4DD06DBB-9D19-45A1-AD12-CCB12BE7760A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RandomClass", "RandomClass\RandomClass.csproj", "{4CA7C605-6D38-4B1F-AF2E-858EF9D31B2A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomClass", "RandomClass\RandomClass.csproj", "{4CA7C605-6D38-4B1F-AF2E-858EF9D31B2A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NumsDivisibleByThree", "NumsDivisibleByThree\NumsDivisibleByThree.csproj", "{BCE67379-F98B-4444-AC1E-DA4A5520533B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumsDivisibleByThree", "NumsDivisibleByThree\NumsDivisibleByThree.csproj", "{BCE67379-F98B-4444-AC1E-DA4A5520533B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalcEnteredNums", "CalcEnteredNums\CalcEnteredNums.csproj", "{DF7EEE47-BEB2-4169-8CF5-715E267ABCEA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcEnteredNums", "CalcEnteredNums\CalcEnteredNums.csproj", "{DF7EEE47-BEB2-4169-8CF5-715E267ABCEA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factorials", "Factorials\Factorials.csproj", "{0424EAA6-A44E-4DAA-A85E-3B96016AEE12}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuessingGame", "GuessingGame\GuessingGame.csproj", "{88B1506B-D4AF-4C92-94A0-3C00A16F2C7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcMaxInt", "CalcMaxInt\CalcMaxInt.csproj", "{4A4DBF46-BA79-4AD8-9A54-9C2409F9B3A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -142,6 +144,10 @@ Global
 		{88B1506B-D4AF-4C92-94A0-3C00A16F2C7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88B1506B-D4AF-4C92-94A0-3C00A16F2C7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88B1506B-D4AF-4C92-94A0-3C00A16F2C7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A4DBF46-BA79-4AD8-9A54-9C2409F9B3A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A4DBF46-BA79-4AD8-9A54-9C2409F9B3A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A4DBF46-BA79-4AD8-9A54-9C2409F9B3A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A4DBF46-BA79-4AD8-9A54-9C2409F9B3A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -158,6 +164,7 @@ Global
 		{DF7EEE47-BEB2-4169-8CF5-715E267ABCEA} = {41FCCB0A-91D8-4B92-A41B-271FEC47AE10}
 		{0424EAA6-A44E-4DAA-A85E-3B96016AEE12} = {41FCCB0A-91D8-4B92-A41B-271FEC47AE10}
 		{88B1506B-D4AF-4C92-94A0-3C00A16F2C7B} = {41FCCB0A-91D8-4B92-A41B-271FEC47AE10}
+		{4A4DBF46-BA79-4AD8-9A54-9C2409F9B3A5} = {41FCCB0A-91D8-4B92-A41B-271FEC47AE10}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {652B29C2-9A97-458D-8648-00EDE4CF3C74}
