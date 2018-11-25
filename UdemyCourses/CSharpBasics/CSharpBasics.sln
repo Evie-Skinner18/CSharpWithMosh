@@ -54,6 +54,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuessingGame", "GuessingGam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcMaxInt", "CalcMaxInt\CalcMaxInt.csproj", "{4A4DBF46-BA79-4AD8-9A54-9C2409F9B3A5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultidimensionalArrays", "MultidimensionalArrays\MultidimensionalArrays.csproj", "{2A5F0C53-262D-4A35-943D-85F0D7336914}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -148,6 +150,10 @@ Global
 		{4A4DBF46-BA79-4AD8-9A54-9C2409F9B3A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A4DBF46-BA79-4AD8-9A54-9C2409F9B3A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A4DBF46-BA79-4AD8-9A54-9C2409F9B3A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A5F0C53-262D-4A35-943D-85F0D7336914}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A5F0C53-262D-4A35-943D-85F0D7336914}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A5F0C53-262D-4A35-943D-85F0D7336914}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A5F0C53-262D-4A35-943D-85F0D7336914}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
