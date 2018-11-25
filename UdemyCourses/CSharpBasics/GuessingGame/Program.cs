@@ -18,11 +18,31 @@ namespace GuessingGame
                 var random = new Random();
                 var randomNum = random.Next(1, 10);
                 Console.Write("Let's play bitch! Guess a number between 1 and 10.");
-                Console.Write(randomNum);
+
 
                 while (userInput != "exit")
                 {
-                    if (numberOfGuesses < 4)
+                    if (numberOfGuesses == 3)
+                    {
+                        Console.Write("Final guess now, make it a good one...");
+                        userInput = Console.ReadLine();
+                        userGuess = Int32.Parse(userInput);
+                        numberOfGuesses++;
+
+                        if (userGuess == randomNum)
+                        {
+                            Console.Write("You've won the game on guess number "
+                                                + numberOfGuesses + ". Well done!");
+                            break;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Ooh no more guesses soz!");
+                            break;
+                        }
+                    }
+
+                    else if (numberOfGuesses < 4)
                     {
                         Console.Write("You have " + (4 - numberOfGuesses).ToString()
                                           + " guesses left. Choose wisely...");
@@ -34,22 +54,19 @@ namespace GuessingGame
                         {
                             Console.Write("You've won the game on guess number "
                                                 + numberOfGuesses + ". Well done!");
+                            break;
                         }
                         else
                         {
                             Console.WriteLine("Not quite my number. Have another go!");
                         }
                     }
-                    else
-                    {
-                        Console.WriteLine("Ooh no more guesses soz!");
-                        break;
-                    }
-                    
+
+
                 }
             }
 
-            Console.WriteLine( "ciao!");
+            Console.Write( "\nciao for now girlfrenn!");
             Console.ReadKey();
         }
     }
