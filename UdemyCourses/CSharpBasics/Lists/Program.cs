@@ -33,12 +33,28 @@ namespace Lists
             Console.WriteLine($"I've counted the number of items in nums: {nums.Count}");
 
             // this will remove the first 1 it finds
-            nums.Remove(1);
+            //nums.Remove(1);
+            //foreach (var num in nums)
+            //{
+            //    Console.WriteLine(num);
+            //}
+
+            // this will remove all the 1s
+            // in C# we're not allowed to change the collection inside a foreach
+            for (var i = 0; i < nums.Count; i++)
+            {
+                // if the num at index i is 1,then remove that num
+                if (nums[i] == 1) nums.Remove(nums[i]);
+            }
+
             foreach (var num in nums)
             {
                 Console.WriteLine(num);
-
             }
+
+            nums.Clear();
+            Console.WriteLine($"Clear: {nums.Count}");
+
             Console.ReadKey();
 
         }
