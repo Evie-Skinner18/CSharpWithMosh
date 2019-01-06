@@ -13,17 +13,21 @@ namespace UniqueNums
             var numList = new List<int>();
 
 
-            while (userInput != "quit")
+            while (userInput != "quit" && numList.Count < 5)
             {
             try
                 {
-                    Console.WriteLine("Please enter a number (I'll keep asking for more numbers until you type" +
-                                            "'quit').");
+                    Console.WriteLine("Please enter a number (I'll keep asking for more numbers until you've entered" +
+                                            " five of them).");
                     var userStringNum = Console.ReadLine().ToLower();
                     var userNum = Int32.Parse(userStringNum);
+                    if (numList.Contains(userNum))
+                    {
+                        Console.WriteLine("You've entered a duplicate number! Please put in unique numbers." +
+                                              "I'll get rid of that duplicate one for you...");
+                        numList.Remove(userNum);
+                    }
                     numList.Add(userNum);
-                    Console.WriteLine("Please enter another number");
-
                 }
                 catch (Exception)
                 {
@@ -31,12 +35,16 @@ namespace UniqueNums
                     break;
                 }
             }
-            Console.WriteLine("Here is a sorted list of your numbers:");
-            foreach (var num in numList)
+            if (numList.Count > 0)
             {
-                Console.WriteLine(num);
+                numList.Sort();
+                Console.WriteLine("Here is a sorted list of your numbers:");
+                foreach (var num in numList)
+                {
+                    Console.WriteLine(num);
+                }
             }
-
+         
             Console.WriteLine("Byebye!");
             Console.ReadKey();
         }
