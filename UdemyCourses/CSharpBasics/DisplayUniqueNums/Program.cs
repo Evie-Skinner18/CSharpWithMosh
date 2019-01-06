@@ -24,9 +24,21 @@ namespace DisplayUniqueNums
                     {
                         break;
                     }
+                    if (userStringNum == "display")
+                    {
+                        foreach (var num in numList)
+                        {
+                            Console.WriteLine(num);
+                        }
+                    }
                     var userNum = Int32.Parse(userStringNum);
+                    if (numList.Contains(userNum))
+                    {
+                        numList.Remove(userNum);
+                    }
                     numList.Add(userNum);
-                    Console.WriteLine("Thank you!");
+                    Console.WriteLine("Thank you! Type 'display' if you want to me to display the unique numbers" +
+                                      "you have entered.");
 
                 }
                 catch (Exception)
