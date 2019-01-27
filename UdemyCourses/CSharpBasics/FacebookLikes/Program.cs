@@ -30,19 +30,18 @@ namespace FacebookLikes
             }
 
             var restOfFriends = friendsWhoLike.Count - 2;
-            var sarkyMessage = friendsWhoLike.Count > 2 ? $"{friendsWhoLike[0]}, {friendsWhoLike[1]} and {restOfFriends}" +
-                                             " like your "
+            var sarkyMessage = friendsWhoLike.Count > 2 ?
+                                             $"{friendsWhoLike[0]}, {friendsWhoLike[1]} and {restOfFriends} others" +
+                                             $" like your {SarkyMessageGenerator.GenerateSavageAdjective()} post" +
+                                             $" about {SarkyMessageGenerator.GenerateSadFacebookPostTopic()}."
+                                             :
+                                             $"{friendsWhoLike[0]} and {friendsWhoLike[1]} like your " +
+                                             $"{SarkyMessageGenerator.GenerateSavageAdjective()} post" +
+                                             $" about {SarkyMessageGenerator.GenerateSadFacebookPostTopic()}.";
 
-
-
-            Console.WriteLine("Bye dickhead!");
-
-
-
+            Console.WriteLine(sarkyMessage);
+            Console.WriteLine("Now I've got all your data HA HA! Bye dickhead!");
         }
-        public class SarkyMessageGenerator()
-        {
 
-        }
     }
 }

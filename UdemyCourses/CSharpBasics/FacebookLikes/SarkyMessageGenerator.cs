@@ -3,17 +3,8 @@ using System.Collections.Generic;
 
 namespace FacebookLikes
 {
-    public class SarkyMessageGenerator
+    public static class SarkyMessageGenerator
     {
-        //public List<string> ListOfAdjectives
-        //{
-        //    get; set;
-
-
-        //}  
-
-
-
 
         public static string GenerateSavageAdjective()
         {
