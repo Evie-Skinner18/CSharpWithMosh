@@ -28,7 +28,6 @@ namespace FacebookLikes
                     friend = Console.ReadLine();
                 }
             }
-
             var restOfFriends = friendsWhoLike.Count - 2;
             var sarkyMessage = friendsWhoLike.Count > 2 ?
                                              $"{friendsWhoLike[0]}, {friendsWhoLike[1]} and {restOfFriends} others" +

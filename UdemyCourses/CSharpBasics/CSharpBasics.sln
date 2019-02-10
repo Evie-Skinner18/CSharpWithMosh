@@ -70,6 +70,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisplayUniqueNums", "Displa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacebookLikes", "FacebookLikes\FacebookLikes.csproj", "{55496D07-64DD-4B19-92F7-C61C56D2FC4C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTimes", "DateTimes\DateTimes.csproj", "{B212E0ED-EBA5-4B66-BC1F-E8DFA4077213}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringBuilder", "StringBuilder\StringBuilder.csproj", "{1EEE415D-99E5-4292-B856-238EAF684CEE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -192,6 +196,14 @@ Global
 		{55496D07-64DD-4B19-92F7-C61C56D2FC4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55496D07-64DD-4B19-92F7-C61C56D2FC4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55496D07-64DD-4B19-92F7-C61C56D2FC4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B212E0ED-EBA5-4B66-BC1F-E8DFA4077213}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B212E0ED-EBA5-4B66-BC1F-E8DFA4077213}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B212E0ED-EBA5-4B66-BC1F-E8DFA4077213}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B212E0ED-EBA5-4B66-BC1F-E8DFA4077213}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EEE415D-99E5-4292-B856-238EAF684CEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EEE415D-99E5-4292-B856-238EAF684CEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EEE415D-99E5-4292-B856-238EAF684CEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EEE415D-99E5-4292-B856-238EAF684CEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
