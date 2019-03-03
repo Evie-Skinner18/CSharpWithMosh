@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercises", "Exercises", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HowManyVowels", "HowManyVowels\HowManyVowels.csproj", "{746798B5-76B2-44FE-B6E3-EBBAAC676FAC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidTime", "HowManyVowels\ValidTime\ValidTime.csproj", "{E5ECDB32-E944-4944-910C-BE53E99384A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,8 +23,13 @@ Global
 		{746798B5-76B2-44FE-B6E3-EBBAAC676FAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{746798B5-76B2-44FE-B6E3-EBBAAC676FAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{746798B5-76B2-44FE-B6E3-EBBAAC676FAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5ECDB32-E944-4944-910C-BE53E99384A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5ECDB32-E944-4944-910C-BE53E99384A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5ECDB32-E944-4944-910C-BE53E99384A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5ECDB32-E944-4944-910C-BE53E99384A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{746798B5-76B2-44FE-B6E3-EBBAAC676FAC} = {18E27B60-FB8B-406D-B7D0-162A15A01659}
+		{E5ECDB32-E944-4944-910C-BE53E99384A8} = {18E27B60-FB8B-406D-B7D0-162A15A01659}
 	EndGlobalSection
 EndGlobal
