@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HowManyVowels", "HowManyVow
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidTime", "HowManyVowels\ValidTime\ValidTime.csproj", "{E5ECDB32-E944-4944-910C-BE53E99384A8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckDuplicateNums", "HowManyVowels\CheckDuplicateNums\CheckDuplicateNums.csproj", "{D4095493-B61F-4FD5-820E-3DE4E61CDA1F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,9 +29,14 @@ Global
 		{E5ECDB32-E944-4944-910C-BE53E99384A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5ECDB32-E944-4944-910C-BE53E99384A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5ECDB32-E944-4944-910C-BE53E99384A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4095493-B61F-4FD5-820E-3DE4E61CDA1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4095493-B61F-4FD5-820E-3DE4E61CDA1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4095493-B61F-4FD5-820E-3DE4E61CDA1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4095493-B61F-4FD5-820E-3DE4E61CDA1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{746798B5-76B2-44FE-B6E3-EBBAAC676FAC} = {18E27B60-FB8B-406D-B7D0-162A15A01659}
 		{E5ECDB32-E944-4944-910C-BE53E99384A8} = {18E27B60-FB8B-406D-B7D0-162A15A01659}
+		{D4095493-B61F-4FD5-820E-3DE4E61CDA1F} = {18E27B60-FB8B-406D-B7D0-162A15A01659}
 	EndGlobalSection
 EndGlobal
