@@ -14,22 +14,25 @@ namespace CheckDuplicateNums
                 var userInput = Console.ReadLine();
                 var numOfAppearances = 0;
 
-                if (String.IsNullOrWhiteSpace(userInput)) break;
-                    userInput.Split('-').ToList();
-                foreach (var num in userInput)
+                if (!String.IsNullOrWhiteSpace(userInput))
                 {
-                    numOfAppearances = userInput.Count(n => n.Equals(num));
-
-                    if (numOfAppearances > 1)
+                    userInput.Split('-').ToList();
+                    foreach (var num in userInput)
                     {
-                        Console.WriteLine($"{num} is a duplicate!");
-                        break;
+                        numOfAppearances = userInput.Count(n => n.Equals(num));
+
+                        if (numOfAppearances > 1)
+                        {
+                            Console.WriteLine($"{num} is a duplicate!");
+                            break;
+                        }
+
+                        Console.WriteLine($"{num} is unique in your number list.");
                     }
 
-                    Console.WriteLine($"{num} is unique in your number list.");
+                    Console.WriteLine("Thank you for those tasty numbers. Ciao!");
                 }
-
-                Console.WriteLine("Thank you for those tasty numbers. Ciao!");
+                Console.WriteLine("Bye Felicia!");
             }
 
             catch
