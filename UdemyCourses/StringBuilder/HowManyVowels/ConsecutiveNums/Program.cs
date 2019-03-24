@@ -18,6 +18,8 @@ namespace ConsecutiveNums
             bool isConsecutive;
             string message; 
 
+      
+
             foreach (var str in userInput)
             {
                 convertedNum = Int32.Parse(str);
@@ -27,10 +29,11 @@ namespace ConsecutiveNums
             foreach (var num in listOfNums)
             {
                 isConsecutive = listOfNums[num] == listOfNums[num - 1] + 1 || listOfNums[num] == listOfNums[num - 1] - 1;
-                message = isConsecutive ? "The numbers you entered are consecutive!" : "Not consecutive";
+               
             }
 
-
+            message = isConsecutive ? "The numbers you entered are consecutive!" : "Not consecutive";
+            Console.WriteLine(message);
 
         }
     }
