@@ -5,7 +5,7 @@ using System.Text;
 namespace ProceduralProgramming
 {
     class Program
-    {
+    {// here we have two methods, each responsible for one thing
         static void Main(string[] args)
         {
             // you should always separate the logic from the bits that log to the console
