@@ -8,36 +8,41 @@ namespace FileReader
 {
     public class FileReader
     {
-        public FileInfo FileInfo { get; set; }
+        //private FileInfo _fileInfo;
 
-        public string FilePath { get; set; }
-        
+        private string _filePath;
+
+        private int _numberOfWords;
 
         public FileReader(string filePath)
         {
             // ctor function specifies that when a new FileReader is instantiated, itwill automatically have a file
             // info object inside it. Jsut pass in the file path when you create FileReader
-            filePath = FilePath;
-            FileInfo = new FileInfo(filePath);
+            _filePath = filePath;
+            //FileInfo = new FileInfo(filePath);
         }
 
         // must read a file and display no of words in it
         public int GetNumberOfWordsInFile(char separator)
         {
             //var stream = FileInfo.OpenRead();
-            int numberOfWords;
-            List<string> fileWords;
 
-            var fileLines = File.ReadLines(FilePath).ToList();
-            //var fileWords = fileLines.ForEach(l => l.Split(separator));
+            List<string> words;
+            
+            var fileLines = File.ReadLines(_filePath).ToList();
+            //var words = fileLines.ForEach(l => l.Split(separator));
 
             foreach (var line in fileLines)
             {
-                var words = line.Split(separator).ToList();
+                words = line.Split(separator).ToList();
                 words.AddRange(words);
+                _numberOfWords += words.Count();
             }
 
-             
+
+
+            return _numberOfWords;
+
 
         }
 

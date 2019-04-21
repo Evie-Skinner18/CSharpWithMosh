@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace FileReader
 {
@@ -6,11 +7,15 @@ namespace FileReader
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine("Hello World!");
+            Console.WriteLine("Hello there file friend! I am going to count the number of words in this file for you.");
             var filePath = @"/Users/eves/file_challenges.txt";
+
+            Console.WriteLine($"The file path is {filePath} and it is {File.Exists(filePath)}");
             var fileReader = new FileReader(filePath);
 
-            fileReader
+            Console.WriteLine(fileReader.GetNumberOfWordsInFile(' '));
+
+
         }
     }
 }
