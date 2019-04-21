@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProceduralProgramming", "Pr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithFiles", "WorkingWithFiles\WorkingWithFiles.csproj", "{510A2EAD-7CF4-439F-B5C6-A92BF571DD13}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Directories", "Directories\Directories.csproj", "{40651160-843F-4C18-84CC-49F3CB33ED4B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{510A2EAD-7CF4-439F-B5C6-A92BF571DD13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{510A2EAD-7CF4-439F-B5C6-A92BF571DD13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{510A2EAD-7CF4-439F-B5C6-A92BF571DD13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40651160-843F-4C18-84CC-49F3CB33ED4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40651160-843F-4C18-84CC-49F3CB33ED4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40651160-843F-4C18-84CC-49F3CB33ED4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40651160-843F-4C18-84CC-49F3CB33ED4B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{746798B5-76B2-44FE-B6E3-EBBAAC676FAC} = {18E27B60-FB8B-406D-B7D0-162A15A01659}
