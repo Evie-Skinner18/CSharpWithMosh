@@ -16,8 +16,6 @@ namespace FileReader
             Console.WriteLine($"The number of words in this file is {fileReader.GetNumberOfWordsInFile(' ')}");
 
             Console.WriteLine($"The longest word in this file is {fileReader.GetLongestWordInFile(' ')}");
-
-
         }
     }
 }
