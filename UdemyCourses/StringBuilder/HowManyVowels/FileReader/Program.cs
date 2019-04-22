@@ -10,10 +10,10 @@ namespace FileReader
             Console.WriteLine("Hello there file friend! I am going to count the number of words in this file for you.");
             var filePath = @"/Users/eves/file_challenges.txt";
 
-            Console.WriteLine($"The file path is {filePath} and it is {File.Exists(filePath)}");
+            Console.WriteLine($"The file path is {filePath} and it is {File.Exists(filePath)} that it exists");
             var fileReader = new FileReader(filePath);
 
-            Console.WriteLine(fileReader.GetNumberOfWordsInFile(' '));
+            Console.WriteLine($"The number of words in this file is {fileReader.GetNumberOfWordsInFile(' ')}");
 
 
         }
