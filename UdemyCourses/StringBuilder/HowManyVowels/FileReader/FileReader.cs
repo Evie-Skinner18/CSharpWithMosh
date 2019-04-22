@@ -19,13 +19,16 @@ namespace FileReader
             _filePath = filePath;
         }
 
+        // re-usable logic to get all the lines in the file
+        public List<string> GetAllFileLines() =>  File.ReadLines(_filePath).ToList();
+
+
         // must read a file and display no of words in it
         // how can you improve this to make it handle paragraph spaces when the separator is ' ' ?
         public int GetNumberOfWordsInFile(char separator)
         {
             List<string> words;
-            
-            var fileLines = File.ReadLines(_filePath).ToList();
+            var fileLines = GetAllFileLines();
 
             foreach (var line in fileLines)
             {
@@ -38,5 +41,15 @@ namespace FileReader
         }
 
         // must display longest word in the file
+        public string GetLongestWordInFile()
+        {
+            List<string> words;
+            var fileLines = GetAllFileLines();
+
+            foreach (var item in collection)
+            {
+
+            }
+        }
     }
 }
