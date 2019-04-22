@@ -8,9 +8,12 @@ namespace FileReader
 {
     public class FileReader
     {
+
         private readonly string _filePath;
 
         private int _numberOfWords;
+
+        private List<string> _words;
 
         public FileReader(string filePath)
         {
@@ -20,36 +23,56 @@ namespace FileReader
         }
 
         // re-usable logic to get all the lines in the file
-        public List<string> GetAllFileLines() =>  File.ReadLines(_filePath).ToList();
+        private List<string> GetAllFileLines() =>  File.ReadLines(_filePath).ToList();
+
+        // re-usable logic to remove punctuation
+        private List<string> RemoveAllPunctuation(List<string> words)
+        {
+            if (words.Contains(",") || words.Contains("-") || words.Contains("!") || words.Contains("."))
+            {
+                foreach (var word in words)
+                {
+                    word.Replace(",", string.Empty);
+                    word.Replace("-", string.Empty);
+                    word.Replace("!", string.Empty);
+                    word.Replace(".", string.Empty);
+                }
+                return words;
+            }
+
+            return words;
+        }
 
 
         // must read a file and display no of words in it
         // how can you improve this to make it handle paragraph spaces when the separator is ' ' ?
         public int GetNumberOfWordsInFile(char separator)
         {
-            List<string> words;
             var fileLines = GetAllFileLines();
 
             foreach (var line in fileLines)
             {
-                words = line.Split(separator).ToList();
-                words.AddRange(words);
-                _numberOfWords += words.Count();
+                _words = line.Split(separator).ToList();
+                _words.AddRange(_words);
+                _numberOfWords += _words.Count();
             }
 
             return _numberOfWords;
         }
 
         // must display longest word in the file
-        public string GetLongestWordInFile()
+        public string GetLongestWordInFile(char separator)
         {
-            List<string> words;
+       
             var fileLines = GetAllFileLines();
 
-            foreach (var item in collection)
+            foreach (var line in fileLines)
             {
-
+                _words = line.Split(separator).ToList();
+                _words = RemoveAllPunctuation(_words);
             }
+
+            return _words.OrderByDescending(w => w.Length).FirstOrDefault();
         }
     }
 }
