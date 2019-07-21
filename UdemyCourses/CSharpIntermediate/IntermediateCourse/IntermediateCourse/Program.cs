@@ -19,6 +19,8 @@ namespace IntermediateCourse
             var anotherPerson = Person.Parse("bitch");
             anotherPerson.Introduce("Evie");
 
+            var manInTheQueue = new Customer(1, "Bob");
+
         }
     }
 }
