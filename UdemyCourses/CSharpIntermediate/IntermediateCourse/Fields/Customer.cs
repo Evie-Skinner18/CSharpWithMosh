@@ -6,14 +6,16 @@ namespace Fields
     {
         public int Id;
         public string Name;
-        public List<Order> Orders;
+
+        // set it to readonly because it should only be initialised once
+        public readonly List<Order> Orders = new List<Order>();
 
 
         //default ctor initialises empty list of orders
-        public Customer()
-        {
-            Orders = new List<Order>();
-        }
+        //public Customer()
+        //{
+        //    Orders = new List<Order>();
+        //}
 
         public Customer(int id)
         {
@@ -30,9 +32,7 @@ namespace Fields
         // they can get promoted to gold customer!
         public void Promote()
         {
-            // you already have a list of orders initliaised by default
-            // in the Customer ctor. what if you accidentally re-initialise it?
-
+            // cannot reinitialise Orders
         }
     }
 }
