@@ -3,7 +3,8 @@ namespace IntermediateCourse
 {
     public class Person
     {
-        public string Name;
+        public string FirstName;
+        public string LastName;
 
         public Person()
         {
@@ -11,14 +12,14 @@ namespace IntermediateCourse
 
         public void Introduce(string greetersName)
         {
-            Console.WriteLine("Hello {0}, I am {1}", greetersName, Name);
+            Console.WriteLine("Hello {0}, I am {1}", greetersName, FirstName);
         }
 
         public static Person Parse(string word)
         {
             var anotherPerson = new Person
             {
-                Name = word
+                FirstName = word
             };
 
             return anotherPerson;

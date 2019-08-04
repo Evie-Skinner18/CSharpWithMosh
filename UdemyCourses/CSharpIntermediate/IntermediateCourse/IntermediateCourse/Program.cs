@@ -21,6 +21,16 @@ namespace IntermediateCourse
 
             var manInTheQueue = new Customer(1, "Bob");
 
+            // we can avoid having loads of different ctor methods by using object initialisation syntax
+            // when creating a new instance
+            var dibby = new Person()
+            {
+                FirstName = "Dibby",
+                LastName = "Wick"
+            };
+
+
+
         }
     }
 }
