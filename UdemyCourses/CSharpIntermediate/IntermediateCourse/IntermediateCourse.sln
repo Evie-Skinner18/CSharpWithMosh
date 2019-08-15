@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntermediateCourse", "IntermediateCourse\IntermediateCourse.csproj", "{BFB1D912-B29F-4856-889D-188AB69A805E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Methods", "Methods\Methods.csproj", "{81BC14AB-28A5-42BD-B00D-9A4E7047197C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fields", "Fields\Fields.csproj", "{3710AED3-D5BA-4314-9F8B-B6EE252711E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFB1D912-B29F-4856-889D-188AB69A805E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFB1D912-B29F-4856-889D-188AB69A805E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFB1D912-B29F-4856-889D-188AB69A805E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFB1D912-B29F-4856-889D-188AB69A805E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81BC14AB-28A5-42BD-B00D-9A4E7047197C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81BC14AB-28A5-42BD-B00D-9A4E7047197C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81BC14AB-28A5-42BD-B00D-9A4E7047197C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81BC14AB-28A5-42BD-B00D-9A4E7047197C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3710AED3-D5BA-4314-9F8B-B6EE252711E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3710AED3-D5BA-4314-9F8B-B6EE252711E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3710AED3-D5BA-4314-9F8B-B6EE252711E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3710AED3-D5BA-4314-9F8B-B6EE252711E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
