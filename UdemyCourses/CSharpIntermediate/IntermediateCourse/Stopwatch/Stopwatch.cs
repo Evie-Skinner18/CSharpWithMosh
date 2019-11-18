@@ -6,20 +6,21 @@ namespace Stopwatch
     {
         private DateTime _startTime { get; set; }
         private DateTime _stopTime { get; set; }
+        private DateTime _duration { get; set; }
 
         public Stopwatch()
         {
 
         }
 
-        public void Start()
+        public TimeSpan Start()
         {
-
+            return DateTime.Now.TimeOfDay;            
         }
 
-        public void Stop()
+        public TimeSpan Stop()
         {
-
+            return DateTime.Now.TimeOfDay;
         }
             
     }
