@@ -13,15 +13,16 @@ namespace Stopwatch
 
         }
 
-        public TimeSpan Start()
+        public DateTime Start()
         {
-            return DateTime.Now.TimeOfDay;            
+            _startTime = DateTime.Now;
+            return _startTime;
         }
 
         public TimeSpan Stop()
         {
-            return DateTime.Now.TimeOfDay;
+            _stopTime = DateTime.Now;
+            return _stopTime - _startTime;            
         }
-            
     }
 }
