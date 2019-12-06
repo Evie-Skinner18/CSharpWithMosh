@@ -9,6 +9,17 @@ namespace StackOverflow
         private DateTime _dateCreated { get; set; }
         protected int VoteValue { get; set; }
 
+        public Post(string title, DateTime dateCreated)
+        {
+            _title = title;
+            _dateCreated = dateCreated;
+        }
+
+        public string AddDescription(string description)
+        {
+            _description = description;
+            return _description;
+        }
 
         public void UpVotePost()
         {
