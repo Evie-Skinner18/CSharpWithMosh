@@ -22,7 +22,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{FD0010DF
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stopwatch.Tests", "Stopwatch.Tests\Stopwatch.Tests.csproj", "{50D96C00-9416-4F8B-8B2B-7389009BED76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackOverflow", "StackOverflow\StackOverflow.csproj", "{29F53AAD-3315-4CF3-B512-0C64B4D5962D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackOverflow", "StackOverflow\StackOverflow.csproj", "{29F53AAD-3315-4CF3-B512-0C64B4D5962D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance", "Inheritance\Inheritance.csproj", "{A5520F48-F23D-41CB-A6F8-4EAFA36373F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composition", "Composition\Composition.csproj", "{740E6EAA-3665-41B7-8CA6-F3D662E082F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -66,6 +70,14 @@ Global
 		{29F53AAD-3315-4CF3-B512-0C64B4D5962D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29F53AAD-3315-4CF3-B512-0C64B4D5962D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29F53AAD-3315-4CF3-B512-0C64B4D5962D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5520F48-F23D-41CB-A6F8-4EAFA36373F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5520F48-F23D-41CB-A6F8-4EAFA36373F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5520F48-F23D-41CB-A6F8-4EAFA36373F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5520F48-F23D-41CB-A6F8-4EAFA36373F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{740E6EAA-3665-41B7-8CA6-F3D662E082F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{740E6EAA-3665-41B7-8CA6-F3D662E082F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{740E6EAA-3665-41B7-8CA6-F3D662E082F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{740E6EAA-3665-41B7-8CA6-F3D662E082F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,15 +4,25 @@ namespace StackOverflow
 {
     public class Post
     {
-        private string _title { get; set; }
+        public string Title { get; set; }
         private string _description { get; set; }
         private DateTime _dateCreated { get; set; }
-        protected int VoteValue { get; set; }
+        private int _voteValue { get; set; }
 
         public Post(string title, DateTime dateCreated)
         {
-            _title = title;
+            Title = title;
             _dateCreated = dateCreated;
+        }
+
+        public int GetVoteValue()
+        {
+            return _voteValue;
+        }
+
+        public void SetVoteValue(int value)
+        {
+            _voteValue = value;
         }
 
         public string AddDescription(string description)
@@ -23,14 +33,12 @@ namespace StackOverflow
 
         public void UpVotePost()
         {
-            VoteValue += VoteValue;
+            _voteValue++;
         }
 
         public void DownVotePost()
         {
-            VoteValue -= VoteValue;
+            _voteValue--;
         }
-
-
     }
 }
