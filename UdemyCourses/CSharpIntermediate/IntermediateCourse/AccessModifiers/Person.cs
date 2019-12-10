@@ -4,10 +4,7 @@ namespace AccessModifiers
 {
     public class Person
     {
-        public Person(DateTime dateTime)
-        {
-            Birthday = Birthday;
-        }
+       
 
         // PROEPRTIES AUTO-IMPLEMENTED WAY: C# compiler internally creates a private field
         // and implements getter and setter for us
@@ -22,6 +19,11 @@ namespace AccessModifiers
 
                 return years;
             }
+        }
+
+        public Person(DateTime dateTime)
+        {
+            Birthday = Birthday;
         }
 
 

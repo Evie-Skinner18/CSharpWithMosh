@@ -6,7 +6,7 @@ namespace Composition
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Hello World!"); 
 
             var logger = new Logger();
             var migrator = new DbMigrator(logger);
