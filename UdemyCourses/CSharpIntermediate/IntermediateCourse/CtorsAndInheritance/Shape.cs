@@ -12,7 +12,6 @@ namespace CtorsAndInheritance
 
         public void Draw()
         {
-            Console.WriteLine("Drawing a nice shape for you...");
         }
     }
 }
