@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.IO;
 
 namespace CtorsAndInheritance
@@ -25,8 +26,22 @@ namespace CtorsAndInheritance
 
             Shape triangle = new Text();
             Text paragraph = (Text)triangle;
+
+            // BOXING
+            var arrList = new ArrayList();
+            arrList.Add(1);
+
+            var number = (int)arrList[0];
+
+            // no boxing happens with normal Lists because they are typesafe. A list of ints can only add ints
+            var anotherList = new List<int>();
+            anotherList.Add(5);
+            
+                
             
 
         }
     }
+
+    
 }
