@@ -15,7 +15,7 @@ namespace Stack
 
         public void Push(object thing)
         {
-            if (thing.Equals(null))
+            if (thing == null)
             {
                 throw new InvalidOperationException("Sorry but you can't add NULL to the stack!");
             }
@@ -29,7 +29,7 @@ namespace Stack
         {
             var lastThingInTheStack = _thingsInTheStack.Count > 0 ? _thingsInTheStack.Last() : null;
 
-            if (_thingsInTheStack.Equals(null) || lastThingInTheStack.Equals(null))
+            if (_thingsInTheStack == null || lastThingInTheStack == null)
             {
                 throw new InvalidOperationException("Sorry but you can't Pop anything from a stack with nothing in it!");
             }          

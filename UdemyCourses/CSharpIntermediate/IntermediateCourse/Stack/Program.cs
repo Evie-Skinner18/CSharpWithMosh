@@ -13,8 +13,6 @@ namespace Stack
             stack.Push("Myaow myaow");
             stack.Push(false);
 
-            stack.Clear();
-
             Console.WriteLine(stack.Pop());
             Console.WriteLine(stack.Pop());
             Console.WriteLine(stack.Pop());
