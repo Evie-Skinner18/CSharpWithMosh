@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Stack
 {
@@ -8,13 +9,23 @@ namespace Stack
 
         public void Push(object thing)
         {
-            _thingsInTheStack.Add(thing);
+            if (thing.Equals(null))
+            {
+                throw new InvalidOperationException("Sorry but you can't add NULL to the stack!");
+            }
+            else
+            {
+                _thingsInTheStack.Add(thing);
+            }
         }
 
         public object Pop()
         {
             var indexOfLastThing = _thingsInTheStack.Count;
-            return _thingsInTheStack[indexOfLastThing];
+
+            return (indexOfLastThing.Equals(0) || indexOfLastThing.Equals(null))? 
+                new InvalidOperationException("Sorry but you can't Pop anything from a stack with nothing in it!") 
+                : _thingsInTheStack[indexOfLastThing];
         }
 
         public void Clear()

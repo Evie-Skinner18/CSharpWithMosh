@@ -6,7 +6,9 @@ namespace Stack
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Hello and welcome to Evie's Stack!");
+
+           // var sta
         }
     }
 }
