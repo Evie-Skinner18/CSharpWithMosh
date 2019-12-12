@@ -17,6 +17,7 @@ namespace Polymorphism
                 new Rectangle()
             };
 
+            // if we use polymorphism (a Shape can have many forms), the canvas doesn't ahve to worry about what kind of shape is going in            
             var canvas = new Canvas();
             canvas.DrawShape(shapes);
         }
