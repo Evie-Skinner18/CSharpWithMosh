@@ -32,7 +32,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Amazon", "Amazon\Amazon.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CtorsAndInheritance", "CtorsAndInheritance\CtorsAndInheritance.csproj", "{C166F13C-8D1F-40A8-998E-80906E875D2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stack", "Stack\Stack.csproj", "{F40B560C-27C9-4314-8EF2-167AB188D113}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stack", "Stack\Stack.csproj", "{F40B560C-27C9-4314-8EF2-167AB188D113}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polymorphism", "Polymorphism\Polymorphism.csproj", "{3DE0257D-1787-4337-A5BC-BD8146700E41}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -96,6 +98,10 @@ Global
 		{F40B560C-27C9-4314-8EF2-167AB188D113}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F40B560C-27C9-4314-8EF2-167AB188D113}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F40B560C-27C9-4314-8EF2-167AB188D113}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DE0257D-1787-4337-A5BC-BD8146700E41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DE0257D-1787-4337-A5BC-BD8146700E41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DE0257D-1787-4337-A5BC-BD8146700E41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DE0257D-1787-4337-A5BC-BD8146700E41}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
