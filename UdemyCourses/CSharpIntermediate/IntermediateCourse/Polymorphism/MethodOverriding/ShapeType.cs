@@ -1,4 +1,4 @@
-﻿namespace Polymorphism
+﻿namespace Polymorphism.MethodOverriding
 {
     public class ShapeType
     {
