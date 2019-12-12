@@ -8,6 +8,11 @@
         public Position Position { get; set; }
 
         public abstract string Draw();
+
+        public string Copy()
+        {
+            return "Copying shape...";
+        }
         
     }
 }
