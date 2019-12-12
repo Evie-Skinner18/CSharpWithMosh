@@ -1,11 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Stack
 {
     public class Stack
     {
         private List<object> _thingsInTheStack;
+
+        public Stack()
+        {
+            _thingsInTheStack = new List<object>();
+        }
 
         public void Push(object thing)
         {
@@ -21,11 +27,17 @@ namespace Stack
 
         public object Pop()
         {
-            var indexOfLastThing = _thingsInTheStack.Count;
+            var lastThingInTheStack = _thingsInTheStack.Count > 0 ? _thingsInTheStack.Last() : null;
 
-            return (indexOfLastThing.Equals(0) || indexOfLastThing.Equals(null))? 
-                new InvalidOperationException("Sorry but you can't Pop anything from a stack with nothing in it!") 
-                : _thingsInTheStack[indexOfLastThing];
+            if (_thingsInTheStack.Equals(null) || lastThingInTheStack.Equals(null))
+            {
+                throw new InvalidOperationException("Sorry but you can't Pop anything from a stack with nothing in it!");
+            }          
+            else
+            {
+                _thingsInTheStack.Remove(lastThingInTheStack);
+                return lastThingInTheStack;                            
+            }
         }
 
         public void Clear()

@@ -8,7 +8,16 @@ namespace Stack
         {
             Console.WriteLine("Hello and welcome to Evie's Stack!");
 
-           // var sta
+            var stack = new Stack();
+            stack.Push("Woof woof!");
+            stack.Push("Myaow myaow");
+            stack.Push(false);
+
+            stack.Clear();
+
+            Console.WriteLine(stack.Pop());
+            Console.WriteLine(stack.Pop());
+            Console.WriteLine(stack.Pop());
         }
     }
 }
