@@ -17,4 +17,9 @@ namespace DbConnection
             Console.WriteLine($"{oracleConnection.CloseConnection()}");
         }
     }
+
+    public class DbCommand
+    {
+
+    }
 }
