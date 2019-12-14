@@ -1,4 +1,5 @@
 ﻿using System;
+using DbConnection.Utilities;
 
 namespace DbConnection
 {
@@ -6,21 +7,13 @@ namespace DbConnection
     {
         private string _connectionString { get; set; }
         public TimeSpan Timeout { get; set; }
+        private DbChecker _dbChecker { get; set; }
 
-        public DbConnection(string connectionString)
+        public DbConnection(string connectionString, DbChecker dbChecker)
         {
             _connectionString = connectionString;
-            CheckConnectionString();
-        }
-
-        public void CheckConnectionString()
-        {
-            var isValid = string.IsNullOrWhiteSpace(_connectionString) ? false : true;
-
-            if (isValid == false)
-            {
-                throw new InvalidOperationException("Sorry but you can't make a DB connection with no connection stwing!");
-            }
+            _dbChecker = dbChecker;
+            _dbChecker.CheckConnectionString(_connectionString);
         }
 
         public abstract string OpenConnection();
