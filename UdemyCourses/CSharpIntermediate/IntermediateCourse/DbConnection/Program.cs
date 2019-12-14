@@ -1,4 +1,6 @@
 ﻿using System;
+using DbConnection.Commands;
+using DbConnection.Utilities;
 
 namespace DbConnection
 {
@@ -8,13 +10,13 @@ namespace DbConnection
         {
             Console.WriteLine("Hello and welcome to the DB!");
 
-            var postgresConnection = new PostgresDbConnection(null);
-            Console.WriteLine($"{postgresConnection.OpenConnection()}");
-            Console.WriteLine($"{postgresConnection.CloseConnection()}");
+            var dbChecker = new DbChecker();
 
-            var oracleConnection = new OracleDbConnection("");
-            Console.WriteLine($"{oracleConnection.OpenConnection()}");
-            Console.WriteLine($"{oracleConnection.CloseConnection()}");
+            var postgresConnection = new PostgresDbConnection("wickwickbickbick", dbChecker);
+            var oracleConnection = new OracleDbConnection("HiyaBrenda", dbChecker);
+
+            var dbCommand = new DbCommand(oracleConnection, "SELECT * FROM DibbyTable", dbChecker);
+            Console.WriteLine(dbCommand.Execute());
         }
     }
 }

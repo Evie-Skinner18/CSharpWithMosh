@@ -1,9 +1,11 @@
-﻿namespace DbConnection
+﻿using DbConnection.Utilities;
+
+namespace DbConnection
 {
     public class PostgresDbConnection : DbConnection
     {
-        public PostgresDbConnection(string connectionString)
-            : base(connectionString)
+        public PostgresDbConnection(string connectionString, DbChecker dbChecker)
+            : base(connectionString, dbChecker)
         {            
         }
 

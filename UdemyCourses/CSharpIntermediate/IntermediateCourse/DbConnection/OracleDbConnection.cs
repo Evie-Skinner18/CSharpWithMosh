@@ -1,10 +1,12 @@
-﻿namespace DbConnection
+﻿using DbConnection.Utilities;
+
+namespace DbConnection
 {
     public class OracleDbConnection : DbConnection
     {
-        public OracleDbConnection(string connectionString):base(connectionString)
+        public OracleDbConnection(string connectionString, DbChecker dbChecker)
+            : base(connectionString, dbChecker)
         {
-
         }
 
         public override string OpenConnection()

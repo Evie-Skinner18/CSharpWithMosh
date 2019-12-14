@@ -14,10 +14,15 @@ namespace DbConnection.Commands
             _dbInstruction = dbInstruction;
             _dbChecker = dbChecker;
             _dbChecker.CheckDbConnection(_dbConnection);
+            _dbChecker.CheckDbString(_dbInstruction);
         }
 
+        public string Execute()
+        {
+            var openMessage = _dbConnection.OpenConnection();
+            var closeMessage = _dbConnection.CloseConnection();
 
+            return $"{openMessage}\n Executing the command! \n{closeMessage}";
+        }
     }
-
-
 }

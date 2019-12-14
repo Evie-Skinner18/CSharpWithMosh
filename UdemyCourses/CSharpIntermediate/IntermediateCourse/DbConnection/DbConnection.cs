@@ -13,7 +13,7 @@ namespace DbConnection
         {
             _connectionString = connectionString;
             _dbChecker = dbChecker;
-            _dbChecker.CheckConnectionString(_connectionString);
+            _dbChecker.CheckDbString(_connectionString);
         }
 
         public abstract string OpenConnection();

@@ -25,6 +25,5 @@ namespace DbConnection.Utilities
             }
         }
 
-        //public void CheckDbInstruction
     }
 }
