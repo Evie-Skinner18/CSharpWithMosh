@@ -38,6 +38,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Polymorphism", "Polymorphis
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbConnection", "DbConnection\DbConnection.csproj", "{395C14EC-4792-44B4-A60A-4233F73B4BD4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{1CDCB5DD-3104-469B-9C7E-FC03EF4BEF0E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -108,6 +110,10 @@ Global
 		{395C14EC-4792-44B4-A60A-4233F73B4BD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{395C14EC-4792-44B4-A60A-4233F73B4BD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{395C14EC-4792-44B4-A60A-4233F73B4BD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CDCB5DD-3104-469B-9C7E-FC03EF4BEF0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CDCB5DD-3104-469B-9C7E-FC03EF4BEF0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CDCB5DD-3104-469B-9C7E-FC03EF4BEF0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CDCB5DD-3104-469B-9C7E-FC03EF4BEF0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
