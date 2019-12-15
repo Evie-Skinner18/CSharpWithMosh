@@ -40,6 +40,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbConnection", "DbConnectio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{1CDCB5DD-3104-469B-9C7E-FC03EF4BEF0E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderProcessor.Tests", "Stopwatch.Tests\OrderProcessor.Tests\OrderProcessor.Tests.csproj", "{E972CBD2-088F-43FB-8AD1-842AC4316A86}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -114,6 +116,10 @@ Global
 		{1CDCB5DD-3104-469B-9C7E-FC03EF4BEF0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1CDCB5DD-3104-469B-9C7E-FC03EF4BEF0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1CDCB5DD-3104-469B-9C7E-FC03EF4BEF0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E972CBD2-088F-43FB-8AD1-842AC4316A86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E972CBD2-088F-43FB-8AD1-842AC4316A86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E972CBD2-088F-43FB-8AD1-842AC4316A86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E972CBD2-088F-43FB-8AD1-842AC4316A86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -125,6 +131,7 @@ Global
 		{29F53AAD-3315-4CF3-B512-0C64B4D5962D} = {87AFA449-B5E1-4E84-9C4C-B8E0F3F4A742}
 		{F40B560C-27C9-4314-8EF2-167AB188D113} = {87AFA449-B5E1-4E84-9C4C-B8E0F3F4A742}
 		{395C14EC-4792-44B4-A60A-4233F73B4BD4} = {87AFA449-B5E1-4E84-9C4C-B8E0F3F4A742}
+		{E972CBD2-088F-43FB-8AD1-842AC4316A86} = {FD0010DF-0B49-450C-BF94-18F979AFBD75}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D8D43E94-1C59-440C-B6CD-FCE60FF9F8FC}

@@ -15,19 +15,14 @@ namespace Interfaces
         public void ProcessOrder(Order order)
         {
             if (order.IsShipped)
-            {
                 throw new InvalidOperationException("This order has already been shipped");
-            }
 
-            else
+            order.Shipment = new Shipment()
             {
-                order.Shipment = new Shipment()
-                {
-                    Cost = _shippingCalculator.CalculateShipping(order),
-                    ShippingDate = DateTime.Today.AddDays(1)
+                Cost = _shippingCalculator.CalculateShipping(order),
+                ShippingDate = DateTime.Today.AddDays(1)
 
-                };
-            }
+            };
         }
     }
 }
