@@ -32,7 +32,7 @@ namespace AccessModifiers
             // you can do the same thing with less code by using PROPERTIES! :->
 
             var customer = new Customer();
-            var calculator = new RateCalculator();
+            //var calculator = new RateCalculator();
 
         }
     }

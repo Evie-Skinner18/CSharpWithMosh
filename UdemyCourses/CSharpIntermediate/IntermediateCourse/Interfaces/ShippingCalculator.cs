@@ -2,7 +2,7 @@
 {
     public class ShippingCalculator : IShippingCalculator
     {
-        
+        // ShippingCalculator IMPLEMENTS IShippingCalculator not inherits
         public float CalculateShipping(Order order)
         {
             // give them 10% off

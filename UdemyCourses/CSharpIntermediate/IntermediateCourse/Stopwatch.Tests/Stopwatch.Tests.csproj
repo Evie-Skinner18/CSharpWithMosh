@@ -12,4 +12,19 @@
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="OrderProcessor.Tests\obj\OrderProcessor.Tests.csproj.nuget.dgspec.json" />
+    <None Remove="OrderProcessor.Tests\obj\OrderProcessor.Tests.csproj.nuget.g.props" />
+    <None Remove="OrderProcessor.Tests\obj\OrderProcessor.Tests.csproj.nuget.g.targets" />
+    <None Remove="OrderProcessor.Tests\obj\project.assets.json" />
+    <None Remove="OrderProcessor.Tests\obj\OrderProcessor.Tests.csproj.nuget.cache" />
+    <None Remove="OrderProcessor.Tests\obj\Debug\netcoreapp2.2\OrderProcessor.Tests.assets.cache" />
+    <None Remove="OrderProcessor.Tests\obj\Debug\netcoreapp2.2\OrderProcessor.Tests.csprojAssemblyReference.cache" />
+    <None Remove="OrderProcessor.Tests\obj\Debug\netcoreapp2.2\OrderProcessor.Tests.csproj.CoreCompileInputs.cache" />
+    <None Remove="OrderProcessor.Tests\obj\Debug\netcoreapp2.2\OrderProcessor.Tests.AssemblyInfoInputs.cache" />
+    <None Remove="OrderProcessor.Tests\obj\Debug\netcoreapp2.2\OrderProcessor.Tests.dll" />
+    <None Remove="OrderProcessor.Tests\obj\Debug\netcoreapp2.2\OrderProcessor.Tests.pdb" />
+    <None Remove="OrderProcessor.Tests\bin\Debug\netcoreapp2.2\OrderProcessor.Tests.runtimeconfig.json" />
+    <None Remove="OrderProcessor.Tests\obj\Debug\netcoreapp2.2\OrderProcessor.Tests.csproj.FileListAbsolute.txt" />
+  </ItemGroup>
 </Project>

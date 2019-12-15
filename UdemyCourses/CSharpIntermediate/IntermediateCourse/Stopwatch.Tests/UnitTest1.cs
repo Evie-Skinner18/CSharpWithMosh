@@ -1,8 +1,8 @@
 using NUnit.Framework;
 
-namespace Tests
+namespace Stopwatch.Tests
 {
-    public class Tests
+    public class StopwatchTests
     {
         [SetUp]
         public void Setup()

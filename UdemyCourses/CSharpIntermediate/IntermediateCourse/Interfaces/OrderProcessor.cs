@@ -4,10 +4,10 @@ namespace Interfaces
 {
     public class OrderProcessor
     {
-        private readonly ShippingCalculator _shippingCalculator;
+        private readonly IShippingCalculator _shippingCalculator;
 
-
-        public OrderProcessor(ShippingCalculator shippingCalculator)
+        // now we're not dependent on the ShippingCalculator concrete class but on an interface! Loose coupling
+        public OrderProcessor(IShippingCalculator shippingCalculator)
         {
             _shippingCalculator = shippingCalculator;
         }
@@ -21,7 +21,6 @@ namespace Interfaces
             {
                 Cost = _shippingCalculator.CalculateShipping(order),
                 ShippingDate = DateTime.Today.AddDays(1)
-
             };
         }
     }
