@@ -16,15 +16,16 @@ namespace OrderProcessorTests
             _orderProcessor = new OrderProcessor(_shippingCalculator);
         }
 
+        
         [Test]
         public void CannotProcessShippedOrder_ShouldReturnInvalidOperationException()
         {
-            var order = new Order(){TotalPrice = 12f, IsShipped = true};         
-            _orderProcessor.ProcessOrder(order);
+            var order = new Order(){TotalPrice = 12f, IsShipped = true};
+           //_orderProcessor.ProcessOrder(order);
 
             Assert.That(order, Is.Not.Null);
-            Assert.That(Throws(InvalidOperationException));
-               
+            // pretty sure that's an Nunit lambda expression
+            Assert.Throws<InvalidOperationException>(() => _orderProcessor.ProcessOrder(order));
         }
     }
 }
