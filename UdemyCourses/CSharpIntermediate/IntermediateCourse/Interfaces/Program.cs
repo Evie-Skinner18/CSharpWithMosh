@@ -51,6 +51,12 @@ namespace Interfaces
             encoder.RegisterNotificationService(new TextService());
             var message = encoder.Encode(video);
             Console.WriteLine(message);
+            
         }
+
+        //public int Sum(int firstNum, int secondNum)
+        //{
+        //    return firstNum + secondNum;
+        //}
     }
 }
