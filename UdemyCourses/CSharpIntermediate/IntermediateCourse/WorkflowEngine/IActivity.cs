@@ -2,6 +2,6 @@
 {
     public interface IActivity
     {
-
+        string Execute();
     }
 }

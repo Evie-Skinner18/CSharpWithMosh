@@ -11,7 +11,6 @@ namespace WorkflowEngine
             _activities = new List<IActivity>();
         }
 
-
         // list of activities is private so we use public method to add activities from outside
         public void RegisterActivity(IActivity activity)
         {
