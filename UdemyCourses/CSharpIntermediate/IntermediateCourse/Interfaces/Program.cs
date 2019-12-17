@@ -34,6 +34,12 @@ namespace Interfaces
             Console.BackgroundColor = ConsoleColor.Yellow;
             var dbMigrator = new DbMigrator(tellyLogger);
             Console.WriteLine(dbMigrator.Migrate());
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.BackgroundColor = ConsoleColor.Black;
+            var fileLogger = new FileLogger(@"C:\\Users\BIO359\source\repos\log.txt");
+            var anotherDbMigrator = new DbMigrator(fileLogger);
+            Console.WriteLine(anotherDbMigrator.Migrate());
         }
     }
 }
