@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Interfaces
+namespace Interfaces.Testability
 {
     public class Shipment
     {
